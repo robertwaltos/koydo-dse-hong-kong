@@ -1,0 +1,45 @@
+// DSE Hong Kong Configuration
+// Generated from top_200_exam_universe_seed.csv
+
+export const EXAM_CONFIG = {
+  examId: "EXAM129",
+  slug: "dse-hong-kong",
+  name: "DSE Hong Kong",
+  fullName: "HKDSE",
+  alias: "HKDSE",
+  family: "HKDSE",
+  category: "School exams",
+  subcategory: "University admissions",
+  country: "Hong Kong",
+  region: "East Asia",
+  languages: ["Chinese","English"],
+  estimatedAnnualTakers: "high",
+  testingWindow: "Apr-May",
+  schedulePattern: "Annual",
+  ageGroup: "17-20",
+  targetUser: "School student",
+  delivery: "Paper-based",
+  questionTypes: ["Objective + written"],
+  adaptivity: "Linear",
+  sections: "Core + electives",
+  scoringMode: "Level scores",
+  essayOrSpeaking: "Writing",
+  ipRisk: "Low",
+  contentReuse: "school_subjects_plus_admissions",
+  uiEngine: "paper_objective_plus_written",
+  monetizationPotential: "Medium",
+  tier: "Tier 4",
+  launchWave: "Wave 6",
+  themeColor: "#D97706",
+  themeColorDark: "#B45309",
+  localizationComplexity: "High",
+  offlineNeeded: false,
+  mobileFirst: true,
+  locale: "zh-CN",
+  isRTL: false,
+  freemiumGate: {
+    dailyQuestions: 10,
+  },
+} as const;
+
+export type ExamConfig = typeof EXAM_CONFIG;
